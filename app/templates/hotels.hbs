@@ -1,16 +1,16 @@
 {{#each model as |hotel|}}
   <article class="listing">
     <h3>{{hotel.name}}</h3>
-    <div class="detail owner">
+    <div class="detail id">
       <span>ID:</span> {{hotel.id}}
     </div>
-    <div class="detail owner">
-      <span>Owner:</span> {{hotel.address}}
+    <div class="detail address">
+      <span>Address:</span> {{hotel.address}}
     </div>
-    <div class="detail type">
+    <div class="detail star-rating">
       <span>Star Rating:</span> {{hotel.star_rating}}
     </div>
-    <div class="detail location">
+    <div class="detail accomodation-type">
       <span>Accomodation Type:</span> {{hotel.accomodation_type.name}}
     </div>
   </article>
