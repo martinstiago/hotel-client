@@ -1,0 +1,12 @@
+<h2>Accomodation Type</h2>
+
+{{#each model as |ac|}}
+  <article class="listing">
+    <div class="detail id">
+      <span>ID:</span> {{ac.id}}
+    </div>
+    <div class="detail location">
+      <span>Name:</span> {{ac.name}}
+    </div>
+  </article>
+{{/each}}

@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('hotels', function() {
+    this.route('edit', { path: '/:hotel_id' });
+  });
+  this.route('accomodation-types');
 });
 
 export default Router;
