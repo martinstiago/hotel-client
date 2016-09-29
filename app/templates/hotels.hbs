@@ -1,5 +1,3 @@
-<h2>Hotels</h2>
-
 {{#each model as |hotel|}}
   <article class="listing">
     <h3>{{hotel.name}}</h3>
@@ -16,4 +14,6 @@
       <span>Accomodation Type:</span> {{hotel.accomodation_type.name}}
     </div>
   </article>
+  <br>
+  {{#link-to 'edit' hotel.id }}Edit{{/link-to}}
 {{/each}}
