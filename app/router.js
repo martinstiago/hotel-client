@@ -7,9 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('hotels', function() {
-    this.route('edit', { path: '/:hotel_id' });
-  });
+  this.route('hotels');
+  this.route('edit', { path: 'hotel/:hotel_id' });
   this.route('accomodation-types');
 });
 
